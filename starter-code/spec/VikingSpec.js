@@ -305,7 +305,7 @@ describe("War", function() {
         war.vikingAttack();
         expect(saxon.health).toEqual(oldHealth - viking.strength);
      });
-
+// ***Hasta aquí--> 52 specs, 0 failures*****//
       // it("should remove dead saxons from the army", function () {
       //   war.vikingAttack();
       //   expect(war.saxonArmy.length).toEqual(0);

@@ -78,11 +78,17 @@ War.prototype.addSaxon = function(Saxon) {
   this.saxonArmy.push(Saxon);
 };
 
-//vikingAttack Method---> Pendiente desde aquí
-
+//vikingAttack Method
 War.prototype.vikingAttack = function() {
-  var oldHealth = this.saxonArmy[Saxon].health;
-  var damage = this.vikingArmy[Viking].health;
+  var vikingDamage = this.vikingArmy[0].attack();
+  this.saxonArmy[0].receiveDamage(vikingDamage);
 
-  this.saxon.receiveDamage(damage);
+// ***Hasta aquí--> 52 specs, 0 failures*****
+
+// Pendiente------>
+  // var randomSaxon = Math.floor(Math.random() * this.saxonArmy.length);
+  // var randomViking = Math.floor(Math.random() * this.vikingArmy.length);
+  // var oldHealth = this.saxonArmy[randomSaxon].health;
+
+
 };
